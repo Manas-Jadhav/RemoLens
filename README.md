@@ -23,20 +23,23 @@ An intelligent Flutter application developed for electronic shopkeepers to manag
 
 1.  **Normalization:** App performs "Letterboxing" on images to maintain aspect ratio for the neural network.
 2.  **Embedding Generation:** MobileNet V3 runs locally on the device to convert the image into a mathematical vector.
-3.  **Similarity Search:** The vector is compared against the database using the **Cosine Distance** formula:  
-    $$1 - (\text{stored\_vector} \cdot \text{query\_vector})$$
+3.  **Similarity Search:** The vector is compared against the database using the **Cosine Distance** formula:
+    $$ 1 - (\text{stored\_vector} \cdot \text{query\_vector})$$
     (Calculated via the `<=>` operator in pgvector).
 4.  **Result Retrieval:** The system returns matches above a specific confidence threshold (e.g., 85%).
 
 ## 📁 Repository Structure
 
+```text
 lib/
-├── services/             # TFLite Inference & Hugging Face API logic
-├── widgets/              # Custom UI components (Image Picker, Info Rows)
-├── pages/                # App screens (Home, Add, Search, Details)
-├── main.dart             # Entry point & Supabase config
+├── services/   # TFLite Inference & Hugging Face API logic
+├── widgets/    # Custom UI components (Image Picker, Info Rows)
+├── pages/      # App screens (Home, Add, Search, Details)
+└── main.dart   # Entry point & Supabase config
+
 supabase/
-└── schema.sql            # SQL Blueprint for Tables and RPC functions
+└── schema.sql  # SQL Blueprint for Tables and RPC functions
+```
 
 ⚙️ Installation & Setup
 1. Environment Variables
