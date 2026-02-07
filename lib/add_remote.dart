@@ -170,7 +170,7 @@ class _Add_Remote_PageState extends State<Add_Remote_Page> {
                                   'brand': brandName,
                                   'category': _selectedType,
                                   'image_url': imageUrl,
-                                  'embedding': featureVector,
+                                  'feature_vector': featureVector,
                                   'price': price,
                                   'rack_no': rackNumber
                                 };
