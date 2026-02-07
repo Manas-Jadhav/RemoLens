@@ -10,6 +10,16 @@ An intelligent Flutter application developed for electronic shopkeepers to manag
 * **Cloud Backend:** Real-time data synchronization and image hosting via **Supabase**.
 * **High-Speed Vector Search:** Millisecond-latency retrieval using **PostgreSQL (pgvector)** and Cosine Similarity.
 
+## 📱 App Preview
+
+| 1. Add Inventory | 2. Visual Search | 3. Instant Match |
+| :---: | :---: | :---: |
+| <img src="screenshots/add_remote.jpg" width="250"> | <img src="screenshots/remote_details.jpg" width="250"> | <img src="screenshots/search_remote.jpg" width="250"> |
+| *Manual Entry & Rack Tagging* | *On-Device Feature Extraction* | *100% Vector Similarity Match* |
+
+### 📂 All Inventory Management
+<img src="screenshots/all_remotes.jpg" width="500">
+
 ## 🛠️ Tech Stack
 
 * **Frontend:** Flutter (Dart)
